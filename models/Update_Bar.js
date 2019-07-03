@@ -12,7 +12,6 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const update_bar_schema = new Schema({
-  // TODO: update schema when needed
   Bar             : { type: String },
   Description     : { type: String },
   Neighborhood    : { type: String }, 

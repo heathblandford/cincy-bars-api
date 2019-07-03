@@ -13,8 +13,7 @@ const update_bar = require("../models/Update_Bar");
 // TODO: make `updateBars` have the ability to update any info that's displayed
 // TODO: like update the deal for the specific day
 // TODO: update address, website, or phone number
-//* if address is updated, will need to run address to lat/long python script again
-
+//* if address is updated, will need to run address to lat/long python script again -- how to do? EC2 instance that runs periodically?
 
 exports.updateBar = (req, res) => {
   update_bar.findOneAndUpdate({Bar: `${req.params.barName}`}, (err, updated_bar) => {
