@@ -9,3 +9,5 @@ A REST API for bars &amp; grills local to cincinnati
 
 **Coming Soon**
 (I mean you can see them in the code, but this isn't completely hosted yet...)
+
+Built with :heart: and :beer: in Cincinnati, OH.
