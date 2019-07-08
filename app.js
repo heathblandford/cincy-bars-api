@@ -2,6 +2,12 @@ const express = require("express");
 const bodyParser = require("body-parser");
 require('dotenv').config();
 
+/*
+
+Using Heroku to deploy -- `git push heroku master` once things work
+
+*/
+
 // this was put in for CORS error when fetching data with fetch api in browsers
 const allowCrossDomain = function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
