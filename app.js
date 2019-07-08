@@ -30,7 +30,7 @@ app.use(bodyParser.json());
 
 // API ENDPOINTS
 
-app.
+app
   .route('/')
   .get((req, res) => {
     res.send('hello world')
