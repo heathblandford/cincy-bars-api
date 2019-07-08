@@ -30,6 +30,12 @@ app.use(bodyParser.json());
 
 // API ENDPOINTS
 
+app.
+  .route('/')
+  .get((req, res) => {
+    res.send('hello world')
+  })
+
 app
   .route('/cincy-bars')
   .get((req, res) => {
