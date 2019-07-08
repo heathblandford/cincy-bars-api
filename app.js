@@ -22,7 +22,7 @@ require("./config/db_config");
 
 const app = express();
 
-// const port = process.env.PORT || 3301;
+const port = process.env.PORT || 3301;
 
 app.use(allowCrossDomain);
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -55,6 +55,6 @@ app
   .route('/cincy-bars/update-bar/:barName')
   .put(update_bars.updateBar)
 
-// app.listen(port, () => {
-//   console.log(`Server running at http://localhost:${port}`);
-// });
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});
