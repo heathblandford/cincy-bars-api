@@ -33,7 +33,7 @@ const update_bar_schema = new Schema({
   specialSaturday : { type: String },
   specialSunday   : { type: String },
   updated_on      : { type: Date, default: Date.now}
-}, {collection: 'cincy-bars-updated', timestamps: true});
+}, {collection: 'cincy-bars-updated02', timestamps: true});
 
 // * [database_name].[collection] -- test is the database name
 module.exports = mongoose.model("cincy-bars.cincy-bars-updated02", update_bar_schema);
