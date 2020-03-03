@@ -36,4 +36,4 @@ const update_bar_schema = new Schema({
 }, {collection: 'cincy-bars-updated', timestamps: true});
 
 // * [database_name].[collection] -- test is the database name
-module.exports = mongoose.model("cincy-bars.cincy-bars-updated", update_bar_schema);
+module.exports = mongoose.model("cincy-bars.cincy-bars-updated02", update_bar_schema);
