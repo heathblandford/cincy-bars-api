@@ -16,10 +16,11 @@ const update_bar = require("../models/Update_Bar");
 //* if address is updated, will need to run address to lat/long python script again -- how to do? EC2 instance that runs periodically?
 
 exports.updateBar = (req, res) => {
-  update_bar.findOneAndUpdate({Bar: `${req.params.barName}`}, (err, updated_bar) => {
-    if (err) {
-      res.status(500).send(err);
-    }
-    res.status(200).json(updated_bar);
-  });
+  let updatedBar = new update_bar(req.body);
+  updatedBar.save((err, updated_bar) => {
+      if(err) {
+          res.status(500).send(err);
+      }
+      res.status(200).json(updated_bar);
+  })
 };
